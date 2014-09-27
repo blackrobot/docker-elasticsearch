@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cat > /data/elasticsearch.yml <<EOF
+cluster:
+  name: $CLUSTER_NAME
+
+path:
+  data: $DATA_PATH
+  logs: $LOGS_PATH
+EOF
